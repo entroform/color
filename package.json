@@ -1,10 +1,12 @@
 {
-  "name": "color",
+  "name": "@nekobird/color",
   "version": "0.0.1",
   "description": "",
   "main": "build/commonjs/color",
   "module": "build/esm/color",
   "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "clean": "rimraf build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,19 @@
   "bugs": {
     "url": "https://github.com/nekobird/color/issues"
   },
-  "homepage": "https://github.com/nekobird/color#readme"
+  "homepage": "https://github.com/nekobird/color#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-typescript": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "rimraf": "^3.0.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2"
+  }
 }

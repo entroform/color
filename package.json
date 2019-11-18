@@ -1,0 +1,20 @@
+{
+  "name": "color",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/commonjs/color",
+  "module": "build/esm/color",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekobird/color.git"
+  },
+  "author": "Andrew Prasetya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nekobird/color/issues"
+  },
+  "homepage": "https://github.com/nekobird/color#readme"
+}

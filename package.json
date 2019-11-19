@@ -2,23 +2,26 @@
   "name": "@nekobird/color",
   "version": "0.0.1",
   "description": "",
-  "main": "build/commonjs/color",
-  "module": "build/esm/color",
-  "scripts": {
-    "build": "rollup -c rollup.config.js",
-    "clean": "rimraf build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/nekobird/color#readme",
+  "bugs": {
+    "url": "https://github.com/nekobird/color/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nekobird/color.git"
   },
+  "license": "MIT",
   "author": "Andrew Prasetya",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nekobird/color/issues"
+  "sideEffects": false,
+  "main": "build/commonjs/color",
+  "module": "build/esm/color",
+  "types": "build/types/color.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "clean": "rimraf build",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/nekobird/color#readme",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/plugin-transform-typescript": "^7.7.2",

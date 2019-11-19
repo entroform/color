@@ -1,5 +1,5 @@
 import {
-  cycleNumber
+  cycleNumber,
 } from './util';
 
 /*
@@ -22,7 +22,6 @@ import {
 */
 
 type ColorArray3 = [number, number, number];
-
 type ColorArray4 = [number, number, number, number];
 
 // RGB 1, 1, 1

@@ -1,14 +1,13 @@
 import {
-  ConvertColor,
-} from './convert-color';
-
-import {
   cycleNumber,
   lerp,
 } from './util';
 
-type ColorArray3 = [number, number, number];
+import {
+  ConvertColor,
+} from './convert-color';
 
+type ColorArray3 = [number, number, number];
 type ColorArray4 = [number, number, number, number];
 
 // Range

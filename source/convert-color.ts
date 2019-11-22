@@ -1,6 +1,6 @@
 import {
   cycleNumber,
-} from './util';
+} from '@nekobird/piko';
 
 /*
   https://gist.github.com/felipesabino/5066336

@@ -1,6 +1,7 @@
 {
   "name": "@nekobird/color",
   "version": "0.0.1",
+  "private": false,
   "description": "",
   "homepage": "https://github.com/nekobird/color#readme",
   "bugs": {
@@ -12,15 +13,22 @@
   },
   "license": "MIT",
   "author": "Andrew Prasetya",
+  "files": [
+    "build/**/*"
+  ],
   "sideEffects": false,
   "main": "build/commonjs/color",
   "module": "build/esm/color",
+  "jsnext:main": "build/esm/color",
   "types": "build/types/color.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "clean": "rimraf build",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@nekobird/piko": "0.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
@@ -35,5 +43,8 @@
     "rollup-plugin-typescript": "^1.0.1",
     "tslib": "^1.10.0",
     "typescript": "^3.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

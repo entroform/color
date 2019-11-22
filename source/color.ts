@@ -1,7 +1,7 @@
 import {
   cycleNumber,
   lerp,
-} from './util';
+} from '@nekobird/piko';
 
 import {
   ConvertColor,
